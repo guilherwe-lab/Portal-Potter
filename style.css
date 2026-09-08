@@ -1,0 +1,8 @@
+/* Título Principal */
+h1 {
+    color: #000000;
+    background: hsl(271, 11%, 49%);
+    text-align: center;
+    padding: 10px;
+}
+

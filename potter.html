@@ -1,11 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portal de Hogwarts: O Mapeamento das Casas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="divpai"> 
+        <div class="card"> 
+            <h1>HARRY POTTER WIKI</h1>
+            
+        
+            <h3>GRIFINÓRIA</h3>
+            <h4> é a casa dos bruxos conhecidos por sua coragem, nobreza e determinação. Com o leão como símbolo e as cores vermelho e dourado, ela acolhe aqueles de espírito destemido, como Harry Potter e Alvo Dumbledore.  </h4>
+            <a href="https://harrypotter.fandom.com/pt-br/wiki/Grifin%C3%B3ria" target="_blank">Grifinória</a>
+            <br><br>
+
+            <svg viewBox="0 0 200 220" width="300" height="300" role="img">
+                <title id="tituloEscudo">Escudo Grifinória</title>
+                <path
+                    d="M 100,20
+                       C 140,20 165,20 180,10 
+                       C 155,50 150,65 190,50 
+                       C 185,100 170,115 100,200 
+                       C 30,130 10,100 10,50
+                       C 30,65 45,40 20,10 
+                       C 30,20 80,20 100,20 Z"
+                    fill="#740001"
+                    stroke="#D3A625"
+                    stroke-width="6"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                />
+            </svg>
+
+            <hr>
+
+            <h3>SONSERINA</h3>
+            <a href="https://harrypotter.fandom.com/pt-br/wiki/Sonserina" target="_blank">Sonserina</a>
+            <br><br>
+            
+            <canvas id="SONSERINA" width="200" height="200"></canvas>
+
+            <hr>
+
+            <!-- 3. CORVINAL (Canvas) -->
+            <h3>CORVINAL</h3>
+            <a href="https://harrypotter.fandom.com/pt-br/wiki/Corvinal" target="_blank">Corvinal</a>
+            <br><br>
+            
+            <canvas id="CORVINAL" width="200" height="200"></canvas>
+
+            <hr>
+
+            <!-- 4. LUFA-LUFA (Canvas) -->
+            <h3>LUFA-LUFA</h3>
+            <a href="https://harrypotter.fandom.com/pt-br/wiki/Lufa-Lufa" target="_blank">Lufa-Lufa</a>
+            <br><br>
+            
+            <canvas id="LUFA-LUFA" width="200" height="200"></canvas>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT ÚNICO PARA RENDERIZAR OS CANVASES -->
+    <script>
+        // Função auxiliar para desenhar o formato base nos canvases
+        function desenharEscudoBase(ctx) {
+            const escudo = new Path2D();
+            escudo.moveTo(100, 10);      
+            escudo.lineTo(190, 45);      
+            escudo.lineTo(170, 140);     
+            escudo.bezierCurveTo(150, 170, 130, 185, 100, 195); 
+            escudo.bezierCurveTo(70, 185, 50, 170, 30, 140);  
+            escudo.lineTo(10, 45);       
+            escudo.closePath(); 
+            return escudo;
+        }
+
+        // --- SONSERINA ---
+        const canvasSonserina = document.getElementById('SONSERINA');
+        const ctxSonserina = canvasSonserina.getContext('2d');
+        const escudoSonserina = desenharEscudoBase(ctxSonserina);
+        
+        ctxSonserina.fillStyle = '#0F5F2C'; 
+        ctxSonserina.fill(escudoSonserina);
+        ctxSonserina.strokeStyle = '#CCCCCC'; 
+        ctxSonserina.lineWidth = 6;
+        ctxSonserina.stroke(escudoSonserina);
+
+        // --- CORVINAL ---
+        const canvasCorvinal = document.getElementById('CORVINAL');
+        const ctxCorvinal = canvasCorvinal.getContext('2d');
+        const escudoCorvinal = desenharEscudoBase(ctxCorvinal);
+        
+        ctxCorvinal.fillStyle = '#000A90'; // Azul clássico
+        ctxCorvinal.fill(escudoCorvinal);
+        ctxCorvinal.strokeStyle = '#946B2D'; // Bronze / Dourado
+        ctxCorvinal.lineWidth = 6;
+        ctxCorvinal.stroke(escudoCorvinal);
+
+        // --- LUFA-LUFA ---
+        const canvasLufa = document.getElementById('LUFA-LUFA');
+        const ctxLufa = canvasLufa.getContext('2d');
+        const escudoLufa = desenharEscudoBase(ctxLufa);
+        
+        ctxLufa.fillStyle = '#FFD700'; 
+        ctxLufa.fill(escudoLufa);
+        ctxLufa.strokeStyle = '#000000'; 
+        ctxLufa.lineWidth = 6;
+        ctxLufa.stroke(escudoLufa);
+    </script>
+
 </body>
 </html>
