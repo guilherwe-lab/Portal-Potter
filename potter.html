@@ -5,17 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Hogwarts: O Mapeamento das Casas</title>
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
+    
+    <!-- NAV SUPERIOR FIXED/STICKY -->
+<header class="cabecalho-principal">
+    <div class="nav-container">
+        <!-- Logo + Nome do Portal -->
+        <div class="logo-area">
+            <svg class="hp-icon" viewBox="0 0 100 100" width="28" height="28">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#ffffff" stroke-width="6"/>
+                <path d="M 30 50 H 70 M 50 18 V 82 M 28 28 L 72 72" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-texto">HOGWARTS</span>
+        </div>
 
-    <div class="divpai"> 
-        <div class="card"> 
+        <!-- Menu de Navegação -->
+        <nav class="menu-navegacao">
+            <a href="#casas" class="ativo">CASAS</a>
+            <a href="#sobre">SOBRE</a>
+            <a href="#historia">HISTÓRIA</a>
+            <a href="#api">WIKI</a>
+            <a href="#teste">TESTE</a>
+        </nav>
+    </div>
+</header>
+
+<!-- BANNER PRINCIPAL (HERO SECTION) -->
+<section class="hero-banner">
+    <div class="hero-conteudo">
+        <span class="subtitulo-hero">HOGWARTS DATABASE</span>
+        <h1 class="titulo-hero">
+            HOGWARTS<br>
+            <span class="destaque-amarelo">HOUSES</span>
+        </h1>
+        <p class="descricao-hero">
+            Explore as casas de Hogwarts e conheça suas virtudes, histórias e características.
+        </p>
+        <div class="barra-detalhe"></div>
+    </div>
+</section>
+    <img src="fundo.harry.jpg" alt="Fundo de Hogwarts" class="fundo">
+
+    
+
+    <div class="grifinoria"> 
+        
             <h1>HARRY POTTER WIKI</h1>
             
-        
             <h3>GRIFINÓRIA</h3>
+    </div>        
             <h4> é a casa dos bruxos conhecidos por sua coragem, nobreza e determinação. Com o leão como símbolo e as cores vermelho e dourado, ela acolhe aqueles de espírito destemido, como Harry Potter e Alvo Dumbledore.  </h4>
-            <a href="https://harrypotter.fandom.com/pt-br/wiki/Grifin%C3%B3ria" target="_blank">Grifinória</a>
+            <button>
+<a href="https://harrypotter.fandom.com/pt-br/wiki/Grifin%C3%B3ria" target="_blank">Grifinória</a>
+            </button>
             <br><br>
 
             <svg viewBox="0 0 200 220" width="300" height="300" role="img">
@@ -37,82 +82,149 @@
             </svg>
 
             <hr>
-
+        <div class="sonserina">
+            
             <h3>SONSERINA</h3>
-            <a href="https://harrypotter.fandom.com/pt-br/wiki/Sonserina" target="_blank">Sonserina</a>
+            <h4>Misteriosa, ambiciosa e envolta em uma aura de elegância singular, a Sonserina é a casa daqueles que enxergam longe e não temem os caminhos necessários para alcançar a grandeza. Sob as águas escuras do Lago Negro, suas comunais emitem um brilho esmeralda calmo e fascinante, refletindo a astúcia e a determinação de seus membros.</h4>
+            <button>
+                <a href="https://harrypotter.fandom.com/pt-br/wiki/Sonserina" target="_blank">Sonserina</a>
+            </button>
             <br><br>
+            <svg viewBox="0 0 200 220" width="300" height="300" role="img">
+                <title id="tituloEscudo">Escudo Sonserina</title>
+                <path
+                    d="M 100,20
+                       C 140,20 165,20 180,10 
+                       C 155,50 150,65 190,50 
+                       C 185,100 170,115 100,200 
+                       C 30,130 10,100 10,50
+                       C 30,65 45,40 20,10 
+                       C 30,20 80,20 100,20 Z"
+                    fill="#043617"
+                    stroke="#838388"
+                    stroke-width="6"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                />
+            </svg>
             
-            <canvas id="SONSERINA" width="200" height="200"></canvas>
-
+        </div>
             <hr>
 
-            <!-- 3. CORVINAL (Canvas) -->
+           <div class="corvinal">
             <h3>CORVINAL</h3>
-            <a href="https://harrypotter.fandom.com/pt-br/wiki/Corvinal" target="_blank">Corvinal</a>
+            <h4>Sabedoria, curiosidade insaciável e uma mente afiada definem a Corvinal. Pousada no topo das torres mais altas do castelo de Hogwarts, onde o vento sopra livre e a vista alcança o horizonte, a casa acolhe aqueles que veem no conhecimento o maior dos poderes.</h4>
+            <button>
+                <a href="https://harrypotter.fandom.com/pt-br/wiki/Corvinal" target="_blank">Corvinal</a>
+            </button>
             <br><br>
-            
-            <canvas id="CORVINAL" width="200" height="200"></canvas>
+             <svg viewBox="0 0 200 220" width="300" height="300" role="img">
+                <title id="tituloEscudo">Escudo Sonserina</title>
+                <path
+                    d="M 100,20
+                       C 140,20 165,20 180,10 
+                       C 155,50 150,65 190,50 
+                       C 185,100 170,115 100,200 
+                       C 30,130 10,100 10,50
+                       C 30,65 45,40 20,10 
+                       C 30,20 80,20 100,20 Z"
+                    fill="#06087e"
+                    stroke="#838388"
+                    stroke-width="6"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                />
+            </svg>
+           
+     
+
+           
 
             <hr>
 
-            <!-- 4. LUFA-LUFA (Canvas) -->
+            <div class="lufa-lufa">
             <h3>LUFA-LUFA</h3>
-            <a href="https://harrypotter.fandom.com/pt-br/wiki/Lufa-Lufa" target="_blank">Lufa-Lufa</a>
+        <h4>Lealdade inabalável, empatia e um espírito de dedicação sem igual definem a Lufa-Lufa. Localizada próximo às cozinhas do castelo, sua sala comunal é acolhedora, banhada por uma luz dourada e repleta de plantas, transmitindo o calor e o conforto de um lar.</h4>
+            <button>
+                <a href="https://harrypotter.fandom.com/pt-br/wiki/Lufa-Lufa" target="_blank">Lufa-Lufa</a>
+            </button>
             <br><br>
+             <svg viewBox="0 0 200 220" width="300" height="300" role="img">
+                <title id="tituloEscudo">Escudo Sonserina</title>
+                <path
+                    d="M 100,20
+                       C 140,20 165,20 180,10 
+                       C 155,50 150,65 190,50 
+                       C 185,100 170,115 100,200 
+                       C 30,130 10,100 10,50
+                       C 30,65 45,40 20,10 
+                       C 30,20 80,20 100,20 Z"
+                    fill="#ddc701"
+                    stroke="#000000"
+                    stroke-width="6"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                />
+            </svg>
             
-            <canvas id="LUFA-LUFA" width="200" height="200"></canvas>
+       
 
         </div>
     </div>
 
-    <!-- SCRIPT ÚNICO PARA RENDERIZAR OS CANVASES -->
-    <script>
-        // Função auxiliar para desenhar o formato base nos canvases
-        function desenharEscudoBase(ctx) {
-            const escudo = new Path2D();
-            escudo.moveTo(100, 10);      
-            escudo.lineTo(190, 45);      
-            escudo.lineTo(170, 140);     
-            escudo.bezierCurveTo(150, 170, 130, 185, 100, 195); 
-            escudo.bezierCurveTo(70, 185, 50, 170, 30, 140);  
-            escudo.lineTo(10, 45);       
-            escudo.closePath(); 
-            return escudo;
-        }
+    <hr>
+  
+    <h1>DESCUBRA SUA CASA!</h1>
 
-        // --- SONSERINA ---
-        const canvasSonserina = document.getElementById('SONSERINA');
-        const ctxSonserina = canvasSonserina.getContext('2d');
-        const escudoSonserina = desenharEscudoBase(ctxSonserina);
-        
-        ctxSonserina.fillStyle = '#0F5F2C'; 
-        ctxSonserina.fill(escudoSonserina);
-        ctxSonserina.strokeStyle = '#CCCCCC'; 
-        ctxSonserina.lineWidth = 6;
-        ctxSonserina.stroke(escudoSonserina);
+    <button>
+    <a href="https://www.harrypotter.com/pt/news/discover-your-hogwarts-house-on-wizarding-world" target="_blank">casas</a>
+    </button>
 
-        // --- CORVINAL ---
-        const canvasCorvinal = document.getElementById('CORVINAL');
-        const ctxCorvinal = canvasCorvinal.getContext('2d');
-        const escudoCorvinal = desenharEscudoBase(ctxCorvinal);
-        
-        ctxCorvinal.fillStyle = '#000A90'; // Azul clássico
-        ctxCorvinal.fill(escudoCorvinal);
-        ctxCorvinal.strokeStyle = '#946B2D'; // Bronze / Dourado
-        ctxCorvinal.lineWidth = 6;
-        ctxCorvinal.stroke(escudoCorvinal);
+<footer>
+    <div class="rodape-container">
+        <!-- Coluna 1: Logo e Título -->
+        <div class="coluna-rodape">
+            <svg class="logo-hp" viewBox="0 0 100 100" width="30" height="30">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#ffffff" stroke-width="6"/>
+                <path d="M 30 50 H 70 M 50 15 V 85 M 25 25 L 75 75" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="titulo-portal">HOGWARTS HOUSES</span>
+        </div>
 
-        // --- LUFA-LUFA ---
-        const canvasLufa = document.getElementById('LUFA-LUFA');
-        const ctxLufa = canvasLufa.getContext('2d');
-        const escudoLufa = desenharEscudoBase(ctxLufa);
-        
-        ctxLufa.fillStyle = '#FFD700'; 
-        ctxLufa.fill(escudoLufa);
-        ctxLufa.strokeStyle = '#000000'; 
-        ctxLufa.lineWidth = 6;
-        ctxLufa.stroke(escudoLufa);
-    </script>
+        <div class="divisor-vertical"></div>
+
+        <!-- Coluna 2: Informações de Aluno / Curso -->
+        <div class="coluna-rodape centralizada">
+            <p class="nome-aluno">Guilherme Joaquim Soares da Silva</p>
+            <p class="curso">ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</p>
+            <p class="destaque-unipe">Unipê • 2º Período</p>
+        </div>
+
+        <div class="divisor-vertical"></div>
+
+        <!-- Coluna 3: Tipo de Projeto -->
+        <div class="coluna-rodape centralizada">
+            <p class="subtitulo-projeto">DESENVOLVIDO COMO</p>
+            <p class="titulo-projeto">PROJETO ACADÊMICO</p>
+        </div>
+    </div>
+
+    <!-- Linha Horizontal Inferior e Copyright -->
+    <div class="rodape-bottom">
+        <p>© 2026 Projeto Primeiro Site - Unipê.</p>
+    </div>
+</footer>
+
+
+    
+
+
+
+
+
 
 </body>
 </html>
+
+
+
